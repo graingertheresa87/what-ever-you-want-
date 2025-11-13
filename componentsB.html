@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back-End Components Showcase</title>
+  <link rel="stylesheet" href="css/componentsB.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="site-logo">Back-End Components</h1>
+    <p id="userStatus">Logged out</p>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main>
+
+    <!-- ================= USER SYSTEM ================= -->
+    <section class="component-section">
+      <h2>User System</h2>
+      <form id="signupForm">
+        <h3>Signup</h3>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <select name="role">
+          <option value="customer">Customer</option>
+          <option value="admin">Admin</option>
+          <option value="premium">Premium Member</option>
+        </select>
+        <button type="submit">Signup</button>
+      </form>
+
+      <form id="loginForm">
+        <h3>Login</h3>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <!-- ================= CRUD DEMO ================= -->
+    <section class="component-section">
+      <h2>CRUD Operations</h2>
+      <form id="crudForm">
+        <input type="text" name="item" placeholder="Item name">
+        <button type="submit">Add Item</button>
+      </form>
+      <ul id="crudList"></ul>
+    </section>
+
+    <!-- ================= CONTACT / LEADS ================= -->
+    <section class="component-section">
+      <h2>Contact / Leads</h2>
+      <form id="leadForm">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Submit Lead</button>
+      </form>
+      <ul id="leadsList"></ul>
+    </section>
+
+    <!-- ================= E-COMMERCE / CART ================= -->
+    <section class="component-section">
+      <h2>E-Commerce Cart</h2>
+      <div class="products">
+        <button class="add-cart" data-product="Product A">Add Product A</button>
+        <button class="add-cart" data-product="Product B">Add Product B</button>
+        <button class="add-cart" data-product="Product C">Add Product C</button>
+      </div>
+      <h4>Cart:</h4>
+      <ul id="cartList"></ul>
+    </section>
+
+    <!-- ================= BOOKING SYSTEM ================= -->
+    <section class="component-section">
+      <h2>Booking System</h2>
+      <form id="bookingForm">
+        <input type="text" name="name" placeholder="Name">
+        <input type="date" name="date">
+        <input type="time" name="time">
+        <button type="submit">Book Appointment</button>
+      </form>
+      <ul id="bookingList"></ul>
+    </section>
+
+    <!-- ================= MEMBERSHIP / SUBSCRIPTION ================= -->
+    <section class="component-section">
+      <h2>Membership / Subscription</h2>
+      <div id="memberContent">Upgrade to premium to see content.</div>
+    </section>
+
+    <!-- ================= API DEMO ================= -->
+    <section class="component-section">
+      <h2>API Demo</h2>
+      <button id="apiBtn">Fetch Sample API Data</button>
+      <pre id="apiResult"></pre>
+    </section>
+
+    <!-- ================= SEARCH & FILTER ================= -->
+    <section class="component-section">
+      <h2>Search & Filter</h2>
+      <input type="text" id="searchInput" placeholder="Search...">
+      <select id="searchSelect">
+        <option value="all">All Categories</option>
+        <option value="Product">Product</option>
+        <option value="Service">Service</option>
+      </select>
+      <ul id="searchList"></ul>
+    </section>
+
+  </main>
+
+  <script src="js/componentsB.js"></script>
+</body>
+</html>
+ 

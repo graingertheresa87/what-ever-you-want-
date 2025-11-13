@@ -1,0 +1,138 @@
+/* === GENERAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+h1, h2, h3, h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* ================= HEADER ================= */
+.site-header {
+  background: #004080;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.site-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#userStatus {
+  font-weight: bold;
+}
+#logoutBtn {
+  padding: 0.5rem 1rem;
+  background: #ff9800;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+#logoutBtn:hover {
+  background: #e68a00;
+}
+
+/* ================= MAIN SECTIONS ================= */
+main {
+  padding: 1rem;
+}
+.component-section {
+  background: #fff;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* ================= FORMS ================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  max-width: 400px;
+}
+input, select, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+
+/* ================= LISTS ================= */
+ul {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1rem;
+}
+ul li {
+  margin: 0.25rem 0;
+  list-style: disc;
+}
+
+/* ================= E-COMMERCE ================= */
+.products button.add-cart {
+  margin: 0.25rem;
+  background: #28a745;
+}
+.products button.add-cart:hover {
+  background: #218838;
+}
+
+/* ================= BOOKING ================= */
+#bookingForm input, #bookingForm button {
+  margin-bottom: 0.5rem;
+}
+
+/* ================= MEMBERSHIP / SUBSCRIPTION ================= */
+#memberContent {
+  background: #e6f0ff;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ================= API DEMO ================= */
+#apiResult {
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+/* ================= SEARCH & FILTER ================= */
+#searchInput, #searchSelect {
+  margin: 0.25rem 0;
+}
+#searchList li {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #ccc;
+}

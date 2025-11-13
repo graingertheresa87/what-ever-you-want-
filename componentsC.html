@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infrastructure & Deployment Showcase</title>
+  <link rel="stylesheet" href="css/componentsC.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Infrastructure & Deployment Demo</h1>
+  </header>
+
+  <main>
+    <!-- Hosting & DNS -->
+    <section class="component-section">
+      <h2>Hosting & DNS</h2>
+      <p>Simulated status of hosting & DNS records:</p>
+      <div class="status-panel">
+        <div>Hosting: <span id="hostingStatus">✅ Online</span></div>
+        <div>DNS: <span id="dnsStatus">✅ Propagated</span></div>
+      </div>
+    </section>
+
+    <!-- SSL -->
+    <section class="component-section">
+      <h2>SSL Setup</h2>
+      <p>Status of SSL certificate:</p>
+      <div class="status-panel">
+        <span id="sslStatus">✅ Valid SSL</span>
+      </div>
+    </section>
+
+    <!-- Deployment -->
+    <section class="component-section">
+      <h2>Deployment</h2>
+      <button id="deployBtn" class="btn">Deploy Website</button>
+      <p id="deployStatus">Not deployed yet.</p>
+    </section>
+
+    <!-- Database Hosting -->
+    <section class="component-section">
+      <h2>Database Hosting</h2>
+      <div class="status-panel">
+        <div>MySQL: <span id="dbStatus">✅ Connected</span></div>
+      </div>
+    </section>
+
+    <!-- CDN -->
+    <section class="component-section">
+      <h2>Content Delivery Network (CDN)</h2>
+      <div class="status-panel">
+        <span id="cdnStatus">✅ Active</span>
+      </div>
+    </section>
+
+    <!-- Backups -->
+    <section class="component-section">
+      <h2>Website Backups</h2>
+      <button id="backupBtn" class="btn">Run Backup</button>
+      <p id="backupStatus">No backups yet.</p>
+    </section>
+
+    <!-- Error Logging & Security -->
+    <section class="component-section">
+      <h2>Error Logging & Security</h2>
+      <button id="errorBtn" class="btn">Check Logs</button>
+      <p id="errorStatus">No errors detected.</p>
+    </section>
+
+    <!-- SEO -->
+    <section class="component-section">
+      <h2>SEO Basics</h2>
+      <button id="seoBtn" class="btn">Run SEO Audit</button>
+      <p id="seoStatus">No issues found.</p>
+    </section>
+
+    <!-- Performance -->
+    <section class="component-section">
+      <h2>Performance Optimization</h2>
+      <button id="perfBtn" class="btn">Test Page Speed</button>
+      <p id="perfStatus">Loading speed: 1.2s</p>
+    </section>
+
+    <!-- Analytics -->
+    <section class="component-section">
+      <h2>Analytics & Tracking</h2>
+      <button id="trackBtn" class="btn">Check GA4/Meta Pixel</button>
+      <p id="trackStatus">Tracking active</p>
+    </section>
+
+    <!-- Email & Payment -->
+    <section class="component-section">
+      <h2>Email & Payment Integrations</h2>
+      <button id="emailBtn" class="btn">Test Email</button>
+      <button id="paymentBtn" class="btn">Test Payment Gateway</button>
+      <p id="integrationStatus">All integrations functional</p>
+    </section>
+
+    <!-- Web Security -->
+    <section class="component-section">
+      <h2>Web Security</h2>
+      <button id="securityBtn" class="btn">Check HTTPS & Sanitization</button>
+      <p id="securityStatus">All security checks passed</p>
+    </section>
+
+  </main>
+
+  <script src="js/componentsC.js"></script>
+</body>
+</html>
